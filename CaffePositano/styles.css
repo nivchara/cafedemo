@@ -1,0 +1,167 @@
+    body {
+        margin: 0;
+        background-color: blanchedalmond;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 800;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    header {
+        background: rgb(246, 216, 160);
+    }
+    
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    
+    .logo {
+        float: left;
+        padding: 10px 0;
+        color: #7a0000;
+    }
+    
+    nav {
+        float: right;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+        position: relative;
+        font-size: 20px;
+    }
+    
+    nav a {
+        color: #7a0000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    
+    nav a:hover {
+        color: #ffffff;
+    }
+    
+    nav a::before {
+        content: '';
+        display: block;
+        height: 10px;
+        background-color: #7a0000;
+        position: absolute;
+        top: 0;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+        width: 100%;
+    }
+    
+    .active {
+        color: #00AA89;
+        text-decoration: underline;
+    }
+    
+    .hero {
+        padding: 100px 0;
+        color: #000000;
+    }
+    
+    .hero__text {
+        width: 60%;
+    }
+    
+    .hero p {
+        margin-bottom: 3em;
+        font-size: 20px;
+    }
+    
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 900;
+        background-color: #7a0000;
+        padding: .75em 2em;
+        border-radius: 100px;
+    }
+    
+    .btn:hover,
+    .btn:focus {
+        opacity: .75;
+    }
+    
+    .location {
+        padding: 100px 0;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .gradient_text {
+        padding: 10px;
+        background-image: radial-gradient(circle, #ffbf00, #62c00fd7, #04e4a1a6);
+        background-size: 100%;
+        background-repeat: repeat;
+        color: white;
+        font-size: 28px;
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+    
+    th,
+    .menu_titles {
+        font-size: 28px;
+    }
+    
+    td {
+        font-size: 18px;
+    }
+    
+    th,
+    td,
+    tr {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    table {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+    }
+    
+    li {
+        text-align: left;
+    }
+    
+    tbody tr:nth-child(odd) {
+        background-color: rgb(246, 216, 160);
+    }
+    
+    footer {
+        position: fixed;
+        left: 10px;
+        bottom: 5px;
+        right: 10px;
+        width: 95%;
+    }
